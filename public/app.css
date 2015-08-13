@@ -1,0 +1,18 @@
+/* line 4, stdin */
+body {
+  font-family: Georgia, serif;
+  font-size: 16px;
+  background: white;
+  color: black; }
+
+/* line 11, stdin */
+h1 {
+  font-size: 2em;
+  margin: 0.5em 0 1em; }
+  /* line 15, stdin */
+  h1 > small {
+    color: gray;
+    font-size: 70%; }
+
+
+/*# sourceMappingURL=app.css.map*/
