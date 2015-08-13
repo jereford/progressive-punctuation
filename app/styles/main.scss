@@ -1,11 +1,22 @@
 $default-bg: white;
 $default-text: black;
 
+//Fonts stack
+// --------------------------------------------------
+
+$heading-font: azo-sans-web, sans-serif;
+$body-font: merriweather, sans-serif;
+
 body {
-	font-family: Georgia, serif;
+	font-family: $body-font;
 	font-size: 16px;
 	background: $default-bg;
 	color: $default-text;
+}
+
+h1, h2, h3, h4 {
+	font-family: $heading-font;
+	font-weight: 400;
 }
 
 h1 {

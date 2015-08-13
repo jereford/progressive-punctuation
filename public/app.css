@@ -1,15 +1,22 @@
-/* line 4, stdin */
+/* line 10, stdin */
 body {
-  font-family: Georgia, serif;
+  font-family: merriweather, sans-serif;
+  font-weight: 300;
   font-size: 16px;
   background: white;
   color: black; }
 
-/* line 11, stdin */
+/* line 17, stdin */
+h1, h2, h3, h4 {
+  font-family: azo-sans-web, sans-serif;
+  font-weight: 700;
+}
+
+/* line 22, stdin */
 h1 {
   font-size: 2em;
   margin: 0.5em 0 1em; }
-  /* line 15, stdin */
+  /* line 26, stdin */
   h1 > small {
     color: gray;
     font-size: 70%; }
