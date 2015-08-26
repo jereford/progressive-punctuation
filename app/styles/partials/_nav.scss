@@ -35,19 +35,6 @@ nav {
     margin-left: 14px;
 }
 
-.modal-box--open { text-decoration: none; }
-.modal-box--close {
-    @extend .bg--wheat;
-    @extend .t--center;
-    position: absolute;
-    top: 50px;
-    right: 100px;
-    border-radius: 50%;
-    text-decoration: none;
-    width: 50px;
-    height: 50px;
-}
-
 .info-icon {
     font-family: $heading-font;
     font-size: 24px;

@@ -363,14 +363,14 @@ table {
 /* line 3, app/styles/modules/_fonts.scss */
 h1, h2, h3, h4 {
   font-family: azo-sans-web, sans-serif;
-  font-weight: 600; }
+  font-weight: 400; }
 
-/* line 8, app/styles/modules/_fonts.scss */
+/* line 10, app/styles/modules/_fonts.scss */
 h1 {
   font-size: 60px;
   margin-top: 0; }
 
-/* line 13, app/styles/modules/_fonts.scss */
+/* line 15, app/styles/modules/_fonts.scss */
 p {
   font-family: merriweather, sans-serif;
   font-size: 18px;
@@ -498,30 +498,15 @@ nav {
   margin-left: 14px; }
 
 /* line 38, app/styles/partials/_nav.scss */
-.modal-box--open {
-  text-decoration: none; }
-
-/* line 39, app/styles/partials/_nav.scss */
-.modal-box--close {
-  position: absolute;
-  top: 50px;
-  right: 100px;
-  border-radius: 50%;
-  text-decoration: none;
-  width: 50px;
-  height: 50px; }
-
-/* line 51, app/styles/partials/_nav.scss */
 .info-icon {
   font-family: azo-sans-web, sans-serif;
   font-size: 24px;
   font-weight: 600;
   line-height: 0; }
 
-/* Pages - page styling */
-/* Styling across all pages */
+/* Modals*/
 /* Full page modal */
-/* line 4, app/styles/pages/_all.scss */
+/* line 4, app/styles/partials/_modal.scss */
 .modal__wrapper {
   pointer-events: none;
   opacity: 0;
@@ -533,11 +518,11 @@ nav {
   -webkit-transition: all 0.25s ease-in-out;
   -moz-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out; }
-  /* line 14, app/styles/pages/_all.scss */
+  /* line 14, app/styles/partials/_modal.scss */
   .modal__wrapper:target {
     opacity: 1;
     pointer-events: auto; }
-  /* line 18, app/styles/pages/_all.scss */
+  /* line 18, app/styles/partials/_modal.scss */
   .modal__wrapper .modal__container {
     max-width: 68em;
     margin-left: auto;
@@ -547,12 +532,28 @@ nav {
       clear: both;
       content: "";
       display: table; }
-    /* line 21, app/styles/pages/_all.scss */
+    /* line 21, app/styles/partials/_modal.scss */
     .modal__wrapper .modal__container h1 {
       margin-top: 0; }
 
+/* line 25, app/styles/partials/_modal.scss */
+.modal-box--open {
+  text-decoration: none; }
+
+/* line 26, app/styles/partials/_modal.scss */
+.modal-box--close {
+  position: absolute;
+  top: 50px;
+  right: 100px;
+  border-radius: 50%;
+  text-decoration: none;
+  width: 50px;
+  height: 50px; }
+
+/* Pages - page styling */
+/* Styling across all pages */
 /* Nav modal */
-/* line 27, app/styles/pages/_all.scss */
+/* line 4, app/styles/pages/_all.scss */
 .nav__links, .nav__content {
   float: left;
   display: block;
@@ -562,23 +563,23 @@ nav {
   .nav__links:last-child, .nav__content:last-child {
     margin-right: 0; }
 
-/* line 29, app/styles/pages/_all.scss */
+/* line 6, app/styles/pages/_all.scss */
 .nav__link {
   text-decoration: none;
   color: #dad9cc; }
-  /* line 32, app/styles/pages/_all.scss */
+  /* line 9, app/styles/pages/_all.scss */
   .nav__link h1 {
     margin-bottom: 0; }
 
 /* Content area */
-/* line 37, app/styles/pages/_all.scss */
+/* line 14, app/styles/pages/_all.scss */
 .content__wrapper {
   height: 100%;
   width: 100%;
   position: fixed;
   z-index: -1; }
 
-/* line 45, app/styles/pages/_all.scss */
+/* line 22, app/styles/pages/_all.scss */
 .content__container {
   max-width: 68em;
   margin-left: auto;
@@ -589,7 +590,7 @@ nav {
     content: "";
     display: table; }
 
-/* line 50, app/styles/pages/_all.scss */
+/* line 27, app/styles/pages/_all.scss */
 .intro {
   float: left;
   display: block;
@@ -598,6 +599,10 @@ nav {
   /* line 89, app/styles/neat/grid/_span-columns.scss */
   .intro:last-child {
     margin-right: 0; }
+
+/* line 29, app/styles/pages/_all.scss */
+.bg--stardust {
+  background: url('/imgs/stardust.png') #343b3f repeat center center; }
 
 
 /*# sourceMappingURL=app.css.map*/

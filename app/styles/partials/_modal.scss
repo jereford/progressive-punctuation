@@ -1,0 +1,36 @@
+/* Modals*/
+
+/* Full page modal */
+.modal__wrapper {
+    @extend .vertical-align;
+    pointer-events: none;
+    opacity: 0;
+    right: 0;
+    left: 0;
+    height: 100%;
+    position: fixed;
+    background-color: $pink;
+    @include transition(all 0.25s ease-in-out);
+    &:target {
+        opacity: 1;
+        pointer-events: auto;
+    }
+    .modal__container {
+        @include outer-container;
+        @extend .vertical-align;
+        h1 { margin-top: 0;}
+    }
+}
+
+.modal-box--open { text-decoration: none; }
+.modal-box--close {
+    @extend .bg--wheat;
+    @extend .t--center;
+    position: absolute;
+    top: 50px;
+    right: 100px;
+    border-radius: 50%;
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+}

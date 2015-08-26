@@ -7,15 +7,21 @@
 .t--left { text-align: left; }
 .t--right {text-align: right; }
 .t--center { text-align: center; }
-.t--semibold { font-weight: 500; }
-.t--regular { font-weight: 200; }
+
+.t--bold { font-weight: 700; }
+.t--regular { font-weight: 400; }
 
 /* Background */
 .bg--gray { background-color: $gray; }
 .bg--pink { background-color: $pink; }
 .bg--wheat { background-color: $wheat; }
 
-/* Fomratting */
+/* Font Styles*/
+.t--italic { font-style: italic; }
+.t--bold { font-weight: bold; }
+.t--underline { text-decoration: underline; }
+
+/* Formatting */
 .f--left { float: left; }
 .f--right { float: right; }
 .d--block { display: block; }
