@@ -1,0 +1,43 @@
+/* Nav */
+
+nav {
+    width: 100%;
+    padding: 20px 0;
+    border-bottom: 1px solid lighten($gray, 10%);
+}
+
+.nav__container { @include outer-container; }
+
+.pp-logo {
+    @extend .d--inline-block;
+    @extend .vertical-middle;
+    width: 200px;
+    height: 50px;
+    fill: $wheat;
+}
+
+.link__container {
+    @extend .f--right;
+    @extend .d--inline-block;
+    @extend .vertical-middle;
+    height: 50px;
+    line-height: 50px;
+}
+
+.link__circle {
+    @extend .d--inline-block;
+    @extend .bg--wheat;
+    @extend .t--center;
+    @extend .vertical-middle;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 14px;
+}
+
+.info-icon {
+    font-family: $heading-font;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 0;
+}

@@ -1,0 +1,39 @@
+/* Utilities - classes so that we can quickly prototype without re-writing too many styles */
+
+/* Font/text manipulations */
+.t--gray  { color: $gray; }
+.t--pink { color: $pink; }
+.t--wheat { color: $wheat; }
+.t--left { text-align: left; }
+.t--right {text-align: right; }
+.t--center { text-align: center; }
+
+.t--bold { font-weight: 700; }
+.t--regular { font-weight: 400; }
+
+/* Background */
+.bg--gray { background-color: $gray; }
+.bg--pink { background-color: $pink; }
+.bg--wheat { background-color: $wheat; }
+
+/* Font Styles*/
+.t--italic { font-style: italic; }
+.t--bold { font-weight: bold; }
+.t--underline { text-decoration: underline; }
+
+/* Formatting */
+.f--left { float: left; }
+.f--right { float: right; }
+.d--block { display: block; }
+.d--inline-block { display: inline-block; }
+.d--none { display: none; }
+.d--table { display: table; }
+.d--table-cell { display: table-cell; }
+
+/* Vertically center */
+.vertical-align {
+    position: relative;
+    top: 50%;
+    @include transform(translateY(-50%));
+}
+.vertical-middle { vertical-align: middle; }

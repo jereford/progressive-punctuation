@@ -1,0 +1,8 @@
+{
+  "name": "Progressive Punctuation",
+  "description": "A simple brunch skeleton application on Node.js app using Express 4",
+  "repository": "https://github.com/artivilla99/progressive-punctuation",
+  "logo": "http://node-js-sample.herokuapp.com/node.svg",
+  "keywords": ["node", "express", "static", "brunch"],
+  "image": "heroku/nodejs"
+}

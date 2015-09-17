@@ -1,0 +1,21 @@
+/* Font styling */
+
+h1, h2, h3, h4 {
+    font-family: $heading-font;
+    // TODO: Check why extends aren't working
+    @extend .t--regular;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 60px;
+    margin-top: 0;
+}
+
+p {
+    font-family: $body-font;
+    @extend .t--regular;
+    font-size: 18px;
+    line-height: 1.75;
+    font-weight: 200;
+}

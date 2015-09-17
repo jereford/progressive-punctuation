@@ -1,0 +1,31 @@
+/* Styling across all pages */
+
+/* Nav modal */
+.nav__links, .nav__content { @include span-columns(6); }
+
+.nav__link {
+    text-decoration: none;
+    color: $wheat;
+    h1 { margin-bottom: 0; }
+}
+
+
+/* Content area */
+.content__wrapper {
+    @extend .vertical-align;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+}
+
+.content__container {
+    @include outer-container;
+    @extend .vertical-align;
+}
+
+.intro { @include span-columns(8); }
+
+.bg--stardust {
+    background: url('/imgs/stardust.png') $gray repeat center center;
+}
