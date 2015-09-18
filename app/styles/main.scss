@@ -11,8 +11,14 @@
 @import 'modules/utilities';
 
 /* Partials - pieces injected in */
-@import 'partials/nav';
+// @import 'partials/nav';
 @import 'partials/modal';
+
+/* Page scroll styling */
+@import 'partials/layout';
+@import 'partials/mixins';
+@import 'partials/variables';
+@import 'partials/page-scroll';
 
 /* Pages - page styling */
 @import 'pages/all';
