@@ -460,7 +460,7 @@ p {
 
 /* Vertically center */
 /* line 26, app/styles/modules/_utilities.scss */
-.vertical-align, .modal__wrapper, .modal__wrapper .modal__container, .cd-section .cd-section__container, .cd-section .cd-section__container.icon__container svg, .content__wrapper, .content__container {
+.vertical-align, .modal__wrapper, .modal__wrapper .modal__container, .cd-section .cd-section__container, .cd-section .cd-section__container.icon__container svg {
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -876,34 +876,6 @@ Main Components
 
 /* Content area */
 /* line 14, app/styles/pages/_all.scss */
-.content__wrapper {
-  height: 100%;
-  width: 100%;
-  position: fixed;
-  z-index: -1; }
-
-/* line 22, app/styles/pages/_all.scss */
-.content__container {
-  max-width: 68em;
-  margin-left: auto;
-  margin-right: auto; }
-  /* line 20, app/styles/bourbon/addons/_clearfix.scss */
-  .content__container::after {
-    clear: both;
-    content: "";
-    display: table; }
-
-/* line 27, app/styles/pages/_all.scss */
-.intro {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 65.88078%; }
-  /* line 89, app/styles/neat/grid/_span-columns.scss */
-  .intro:last-child {
-    margin-right: 0; }
-
-/* line 29, app/styles/pages/_all.scss */
 .bg--stardust {
   background: url('/imgs/stardust.png') #343b3f repeat center center; }
 
