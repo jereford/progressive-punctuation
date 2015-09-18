@@ -6,6 +6,10 @@
 /* Base - these dont generate CSS */
 @import 'variables';
 
+@import 'partials/layout';
+@import 'partials/mixins';
+@import 'partials/variables';
+
 /* Modules - main styling modules */
 @import 'modules/fonts';
 @import 'modules/utilities';
@@ -15,9 +19,6 @@
 @import 'partials/modal';
 
 /* Page scroll styling */
-@import 'partials/layout';
-@import 'partials/mixins';
-@import 'partials/variables';
 @import 'partials/page-scroll';
 
 /* Pages - page styling */

@@ -363,19 +363,32 @@ table {
 /* line 3, app/styles/modules/_fonts.scss */
 h1, h2, h3, h4 {
   font-family: azo-sans-web, sans-serif;
-  font-weight: 400; }
+  font-weight: 400;
+  line-height: 1.25; }
 
-/* line 10, app/styles/modules/_fonts.scss */
+/* line 11, app/styles/modules/_fonts.scss */
 h1 {
-  font-size: 60px;
+  font-size: 30px;
   margin-top: 0; }
+  @media only screen and (min-width: 768px) {
+    h1 {
+      font-size: 40px; } }
+  @media only screen and (min-width: 1050px) {
+    h1 {
+      font-size: 60px; } }
 
-/* line 15, app/styles/modules/_fonts.scss */
+/* line 18, app/styles/modules/_fonts.scss */
 p {
-  font-family: merriweather, sans-serif;
-  font-size: 18px;
+  font-family: azo-sans-web, sans-serif;
+  font-size: 14px;
   line-height: 1.75;
   font-weight: 200; }
+  @media only screen and (min-width: 768px) {
+    p {
+      font-size: 16px; } }
+  @media only screen and (min-width: 1050px) {
+    p {
+      font-size: 18px; } }
 
 /* Utilities - classes so that we can quickly prototype without re-writing too many styles */
 /* Font/text manipulations */
@@ -447,7 +460,7 @@ p {
 
 /* Vertically center */
 /* line 26, app/styles/modules/_utilities.scss */
-.vertical-align, .modal__wrapper, .modal__wrapper .modal__container, .content__wrapper, .content__container {
+.vertical-align, .modal__wrapper, .modal__wrapper .modal__container, .cd-section .cd-section__container, .cd-section .cd-section__container.icon__container svg, .content__wrapper, .content__container {
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -558,15 +571,135 @@ Main Components
 .cd-section {
   height: 100vh; }
   /* line 61, app/styles/partials/_page-scroll.scss */
-  .cd-section h2 {
+  .cd-section .cd-section__wrapper {
     line-height: 100vh;
-    text-align: center;
     font-size: 2.4rem;
+    margin: 0 auto;
+    max-width: 1200px;
+    height: 100vh; }
+  /* line 69, app/styles/partials/_page-scroll.scss */
+  .cd-section .cd-section__container {
+    line-height: 1.5;
+    padding: 0 30px; }
+    @media only screen and (min-width: 768px) {
+      .cd-section .cd-section__container {
+        padding: 0 60px;
+        max-width: 400px; } }
+    @media only screen and (min-width: 1050px) {
+      .cd-section .cd-section__container {
+        max-width: 700px; } }
+    /* line 80, app/styles/partials/_page-scroll.scss */
+    .cd-section .cd-section__container .how-to-use {
+      font-size: 10px;
+      text-transform: uppercase;
+      font-weight: 600;
+      padding: 10px 20px;
+      border-radius: 100px; }
+    /* line 87, app/styles/partials/_page-scroll.scss */
+    .cd-section .cd-section__container .punctuation-title {
+      margin-top: 30px; }
+    /* line 91, app/styles/partials/_page-scroll.scss */
+    .cd-section .cd-section__container .punctuation-body {
+      margin: 0 0 20px; }
+      @media only screen and (min-width: 768px) {
+        .cd-section .cd-section__container .punctuation-body {
+          margin-bottom: 30px; } }
+      @media only screen and (min-width: 1050px) {
+        .cd-section .cd-section__container .punctuation-body {
+          margin-bottom: 40px; } }
+    @media only screen and (min-width: 768px) {
+      .cd-section .cd-section__container.punctuation-container {
+        max-width: 600px;
+        width: 50%; } }
+    /* line 105, app/styles/partials/_page-scroll.scss */
+    .cd-section .cd-section__container.icon__container {
+      display: none; }
+      @media only screen and (min-width: 768px) {
+        .cd-section .cd-section__container.icon__container svg {
+          height: 100%;
+          width: 100%; } }
+      @media only screen and (min-width: 768px) {
+        .cd-section .cd-section__container.icon__container {
+          display: block;
+          float: left;
+          max-width: 500px;
+          width: 50%;
+          height: 50vh;
+          text-align: center; } }
+      @media only screen and (min-width: 1050px) {
+        .cd-section .cd-section__container.icon__container {
+          max-width: 600px; } }
+    @media only screen and (min-width: 768px) {
+      .cd-section .cd-section__container .punctuation-icon--mobile {
+        display: none; } }
+    @media only screen and (min-width: 768px) {
+      .cd-section .cd-section__container.one {
+        max-width: 400px; } }
+    @media only screen and (min-width: 1050px) {
+      .cd-section .cd-section__container.one {
+        max-width: 700px; } }
+    /* line 141, app/styles/partials/_page-scroll.scss */
+    .cd-section .cd-section__container.one-icon {
+      fill: white; }
+    /* line 146, app/styles/partials/_page-scroll.scss */
+    .cd-section .cd-section__container.two {
+      float: left; }
+      /* line 148, app/styles/partials/_page-scroll.scss */
+      .cd-section .cd-section__container.two .tag {
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 12px; }
+      /* line 153, app/styles/partials/_page-scroll.scss */
+      .cd-section .cd-section__container.two .how-to-use {
+        background-color: #fff;
+        color: #1c1c1c;
+        -webkit-transition: 0.2s all ease-in;
+        -moz-transition: 0.2s all ease-in;
+        transition: 0.2s all ease-in; }
+        /* line 157, app/styles/partials/_page-scroll.scss */
+        .cd-section .cd-section__container.two .how-to-use:hover {
+          background-color: #1c1c1c;
+          color: #fff; }
+      /* line 162, app/styles/partials/_page-scroll.scss */
+      .cd-section .cd-section__container.two .punctuation-icon--mobile {
+        fill: white;
+        width: 30px;
+        height: 26px;
+        margin-right: 10px;
+        margin-bottom: -2px; }
+    /* line 172, app/styles/partials/_page-scroll.scss */
+    .cd-section .cd-section__container.three {
+      float: left; }
+      /* line 174, app/styles/partials/_page-scroll.scss */
+      .cd-section .cd-section__container.three .tag {
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 12px; }
+      /* line 179, app/styles/partials/_page-scroll.scss */
+      .cd-section .cd-section__container.three .how-to-use {
+        background-color: #fff;
+        color: #1c1c1c;
+        -webkit-transition: 0.2s all ease-in;
+        -moz-transition: 0.2s all ease-in;
+        transition: 0.2s all ease-in; }
+        /* line 183, app/styles/partials/_page-scroll.scss */
+        .cd-section .cd-section__container.three .how-to-use:hover {
+          background-color: #1c1c1c;
+          color: #fff; }
+      /* line 188, app/styles/partials/_page-scroll.scss */
+      .cd-section .cd-section__container.three .punctuation-icon--mobile {
+        fill: white;
+        width: 10px;
+        height: 26px;
+        margin-right: 10px;
+        margin-bottom: -2px; }
+  /* line 198, app/styles/partials/_page-scroll.scss */
+  .cd-section h2 {
     margin: 0; }
-  /* line 68, app/styles/partials/_page-scroll.scss */
+  /* line 200, app/styles/partials/_page-scroll.scss */
   .cd-section:first-of-type > div {
-    background-color: #2b334f; }
-    /* line 71, app/styles/partials/_page-scroll.scss */
+    background-color: #2d3337; }
+    /* line 203, app/styles/partials/_page-scroll.scss */
     .cd-section:first-of-type > div::before {
       /* alert -> all scrolling effects are not visible on small devices */
       position: absolute;
@@ -578,44 +711,44 @@ Main Components
       font-size: 1.3rem;
       text-transform: uppercase;
       color: #6a7083; }
-  /* line 85, app/styles/partials/_page-scroll.scss */
+  /* line 217, app/styles/partials/_page-scroll.scss */
   .cd-section:nth-of-type(2) > div {
     background-color: #2e5367; }
-  /* line 89, app/styles/partials/_page-scroll.scss */
+  /* line 221, app/styles/partials/_page-scroll.scss */
   .cd-section:nth-of-type(3) > div {
-    background-color: #267481; }
-  /* line 93, app/styles/partials/_page-scroll.scss */
+    background-color: #c42476; }
+  /* line 225, app/styles/partials/_page-scroll.scss */
   .cd-section:nth-of-type(4) > div {
     background-color: #fcb052; }
-  /* line 97, app/styles/partials/_page-scroll.scss */
+  /* line 229, app/styles/partials/_page-scroll.scss */
   .cd-section:nth-of-type(5) > div {
     background-color: #f06a59; }
-  /* line 103, app/styles/partials/_page-scroll.scss */
+  /* line 235, app/styles/partials/_page-scroll.scss */
   [data-animation="parallax"] .cd-section > div, [data-animation="fixed"] .cd-section > div, [data-animation="opacity"] .cd-section > div {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover; }
-  /* line 111, app/styles/partials/_page-scroll.scss */
+  /* line 243, app/styles/partials/_page-scroll.scss */
   [data-animation="parallax"] .cd-section:first-of-type > div, [data-animation="fixed"] .cd-section:first-of-type > div, [data-animation="opacity"] .cd-section:first-of-type > div {
     background-image: url('../img/img-1.jpg'); }
-  /* line 117, app/styles/partials/_page-scroll.scss */
+  /* line 249, app/styles/partials/_page-scroll.scss */
   [data-animation="parallax"] .cd-section:nth-of-type(2) > div, [data-animation="fixed"] .cd-section:nth-of-type(2) > div, [data-animation="opacity"] .cd-section:nth-of-type(2) > div {
     background-image: url('../img/img-2.jpg'); }
-  /* line 123, app/styles/partials/_page-scroll.scss */
+  /* line 255, app/styles/partials/_page-scroll.scss */
   [data-animation="parallax"] .cd-section:nth-of-type(3) > div, [data-animation="fixed"] .cd-section:nth-of-type(3) > div, [data-animation="opacity"] .cd-section:nth-of-type(3) > div {
     background-image: url('../img/img-3.jpg'); }
-  /* line 129, app/styles/partials/_page-scroll.scss */
+  /* line 261, app/styles/partials/_page-scroll.scss */
   [data-animation="parallax"] .cd-section:nth-of-type(4) > div, [data-animation="fixed"] .cd-section:nth-of-type(4) > div, [data-animation="opacity"] .cd-section:nth-of-type(4) > div {
     background-image: url('../img/img-4.jpg'); }
-  /* line 135, app/styles/partials/_page-scroll.scss */
+  /* line 267, app/styles/partials/_page-scroll.scss */
   [data-animation="parallax"] .cd-section:nth-of-type(5) > div, [data-animation="fixed"] .cd-section:nth-of-type(5) > div, [data-animation="opacity"] .cd-section:nth-of-type(5) > div {
     background-image: url('../img/img-5.jpg'); }
   @media only screen and (min-width: 1050px) {
-    /* line 141, app/styles/partials/_page-scroll.scss */
+    /* line 273, app/styles/partials/_page-scroll.scss */
     .cd-section h2 {
       font-size: 4rem;
       font-weight: 300; }
-    /* line 146, app/styles/partials/_page-scroll.scss */
+    /* line 278, app/styles/partials/_page-scroll.scss */
     [data-hijacking="on"] .cd-section {
       opacity: 0;
       visibility: hidden;
@@ -623,32 +756,32 @@ Main Components
       top: 0;
       left: 0;
       width: 100%; }
-      /* line 154, app/styles/partials/_page-scroll.scss */
+      /* line 286, app/styles/partials/_page-scroll.scss */
       [data-hijacking="on"] .cd-section > div {
         visibility: visible; }
-    /* line 159, app/styles/partials/_page-scroll.scss */
+    /* line 291, app/styles/partials/_page-scroll.scss */
     [data-hijacking="off"] .cd-section > div {
       opacity: 0; }
-    /* line 163, app/styles/partials/_page-scroll.scss */
+    /* line 295, app/styles/partials/_page-scroll.scss */
     [data-animation="rotate"] .cd-section {
       /* enable a 3D-space for children elements */
       -webkit-perspective: 1800px;
       -moz-perspective: 1800px;
       perspective: 1800px; }
-    /* line 168, app/styles/partials/_page-scroll.scss */
+    /* line 300, app/styles/partials/_page-scroll.scss */
     [data-hijacking="on"][data-animation="rotate"] .cd-section:not(:first-of-type) {
       -webkit-perspective-origin: center 0;
       -moz-perspective-origin: center 0;
       perspective-origin: center 0; }
-    /* line 174, app/styles/partials/_page-scroll.scss */
+    /* line 306, app/styles/partials/_page-scroll.scss */
     [data-animation="scaleDown"] .cd-section > div, [data-animation="gallery"] .cd-section > div, [data-animation="catch"] .cd-section > div {
       box-shadow: 0 0 0 rgba(25, 30, 46, 0.4); }
-    /* line 179, app/styles/partials/_page-scroll.scss */
+    /* line 311, app/styles/partials/_page-scroll.scss */
     [data-animation="opacity"] .cd-section.visible > div {
       z-index: 1; } }
 
 @media only screen and (min-width: 1050px) {
-  /* line 186, app/styles/partials/_page-scroll.scss */
+  /* line 318, app/styles/partials/_page-scroll.scss */
   .cd-section:first-of-type > div::before {
     display: none; } }
 
@@ -666,10 +799,10 @@ Main Components
     transform: translateZ(0);
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden; }
-    /* line 203, app/styles/partials/_page-scroll.scss */
+    /* line 335, app/styles/partials/_page-scroll.scss */
     [data-hijacking="on"] .cd-section > div {
       position: absolute; }
-    /* line 207, app/styles/partials/_page-scroll.scss */
+    /* line 339, app/styles/partials/_page-scroll.scss */
     [data-animation="rotate"] .cd-section > div {
       -webkit-transform-origin: center bottom;
       -moz-transform-origin: center bottom;
@@ -677,7 +810,7 @@ Main Components
       -o-transform-origin: center bottom;
       transform-origin: center bottom; } }
 
-/* line 213, app/styles/partials/_page-scroll.scss */
+/* line 345, app/styles/partials/_page-scroll.scss */
 .cd-vertical-nav {
   /* lateral navigation */
   position: fixed;
@@ -691,7 +824,7 @@ Main Components
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
   display: none; }
-  /* line 221, app/styles/partials/_page-scroll.scss */
+  /* line 353, app/styles/partials/_page-scroll.scss */
   .cd-vertical-nav a {
     display: block;
     height: 40px;
@@ -701,7 +834,7 @@ Main Components
     text-indent: 100%;
     white-space: nowrap;
     background: url(../img/cd-icon-arrow.svg) no-repeat center center; }
-    /* line 233, app/styles/partials/_page-scroll.scss */
+    /* line 365, app/styles/partials/_page-scroll.scss */
     .cd-vertical-nav a.cd-prev {
       -webkit-transform: rotate(180deg);
       -moz-transform: rotate(180deg);
@@ -709,7 +842,7 @@ Main Components
       -o-transform: rotate(180deg);
       transform: rotate(180deg);
       margin-bottom: 10px; }
-    /* line 238, app/styles/partials/_page-scroll.scss */
+    /* line 370, app/styles/partials/_page-scroll.scss */
     .cd-vertical-nav a.inactive {
       visibility: hidden;
       opacity: 0;
