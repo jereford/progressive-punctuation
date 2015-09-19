@@ -82,7 +82,7 @@ body[data-hijacking="on"] {
             text-transform: uppercase;
             font-weight: 600;
             padding: 10px 20px;
-            border-radius: 100px;
+            border-radius: 3px;
         }
         .punctuation-title {
             margin-top: 30px;
@@ -193,6 +193,33 @@ body[data-hijacking="on"] {
                 margin-bottom: -2px;
             }
         }
+
+        //Fourth Slide
+        &.four {
+            float: left;
+            .tag {
+                font-weight: 600;
+                text-transform: uppercase;
+                font-size: 12px;
+            }
+            .how-to-use {
+                background-color: #fff;
+                color: #1c1c1c;
+                @include transition(0.2s all ease-in);
+                &:hover {
+                    background-color: #1c1c1c;
+                    color: #fff;
+                }
+            }
+            .punctuation-icon--mobile {
+                fill: white;
+                width: 10px;
+                height: 26px;
+                margin-right: 10px;
+                margin-bottom: -2px;
+            }
+        }
+
     }
 
     h2 { margin: 0; }
@@ -228,6 +255,10 @@ body[data-hijacking="on"] {
 
     &:nth-of-type(5) > div {
         background-color: $color-5;
+    }
+
+    &:nth-of-type(6) > div {
+        background-color: $color-6;
     }
 
     [data-animation="parallax"] & > div,
