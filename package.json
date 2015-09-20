@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
-    "coffee-script-brunch": "^1.8.2",
+    "brunch": "^1.8.5",
+    "javascript-brunch": "^1.7.1",
     "sass-brunch": "^1.8.11",
     "static-handlebars-brunch": "~ 0.1.0"
   }

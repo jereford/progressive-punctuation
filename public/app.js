@@ -110,16 +110,20 @@
   globals.require = require;
 })();
 require.register("application", function(exports, require, module) {
-'use strict';
-var App;
+"use strict";
 
-App = {
-  init: function() {
-    console.log('App initialized.');
+var $ = require('jquery');
+
+var App = {
+  init: function init() {
+    $('body').append('App initialized.');
   }
 };
 
 module.exports = App;
+
+//# sourceMappingURL=app.js.map
+
 });
 
 ;
