@@ -5,7 +5,7 @@ h1, h2, h3, h4 {
     // TODO: Check why extends aren't working
     @extend .t--regular;
     font-weight: 400;
-    line-height: 1.15;
+    line-height: 1.2;
 }
 
 h1 {
@@ -18,7 +18,7 @@ h1 {
 p {
     font-family: $heading-font;
     @extend .t--regular;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.8;
     font-weight: 200;
     @include MQ(M) { font-size: 16px; }
