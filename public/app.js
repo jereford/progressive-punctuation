@@ -115,7 +115,6 @@ require.register("application", function(exports, require, module) {
 var App = {
   init: function init() {
     console.log('App initialized.');
-
   }
 };
 
@@ -125,5 +124,16 @@ module.exports = App;
 
 });
 
-;
+;require.register("initialize", function(exports, require, module) {
+var app;
+
+app = require('application');
+
+$(function() {
+  return app.initialize();
+});
+
+});
+
+
 //# sourceMappingURL=app.js.map

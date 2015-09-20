@@ -1,5 +1,5 @@
 
-/* -------------------------------- 
+/* --------------------------------
 
 Primary style
 
@@ -23,15 +23,15 @@ body {
     @include font-smoothing;
 
     &::before {
-        /* never visible - this is used in jQuery to check the current MQ */ 
+        /* never visible - this is used in jQuery to check the current MQ */
         content: 'mobile';
         display: none;
     }
 
     @include MQ(L) {
-        
+
         &::before {
-            /* never visible - this is used in jQuery to check the current MQ */ 
+            /* never visible - this is used in jQuery to check the current MQ */
             content: 'desktop';
         }
     }
@@ -42,14 +42,14 @@ a {
     text-decoration: none;
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
-Main Components 
+Main Components
 
 -------------------------------- */
 
 body[data-hijacking="on"] {
-    
+
     @include MQ(L) {
         overflow: hidden;
     }
@@ -70,8 +70,8 @@ body[data-hijacking="on"] {
         @extend .vertical-align;
         line-height: 1.5;
         padding: 0 30px;
-        @include MQ(M) { 
-            padding: 0 60px; 
+        @include MQ(M) {
+            padding: 0 60px;
             max-width: 400px
         }
         @include MQ(L) {
@@ -101,11 +101,11 @@ body[data-hijacking="on"] {
                 width: 50%;
             }
         }
-        //Icon container 
+        //Icon container
         &.icon__container {
             display: none;
-            svg { 
-                @extend .vertical-align; 
+            svg {
+                @extend .vertical-align;
                 @include MQ(M) {
                     height: 100%;
                     width: 100%
@@ -131,11 +131,11 @@ body[data-hijacking="on"] {
 
         //First slide
         &.one {
-            @include MQ(M) { 
-                max-width: 400px; 
+            @include MQ(M) {
+                max-width: 400px;
             }
-            @include MQ(L) { 
-                max-width: 700px; 
+            @include MQ(L) {
+                max-width: 700px;
             }
         }
         &.one-icon {
@@ -206,7 +206,7 @@ body[data-hijacking="on"] {
             width: 100%;
             text-align: center;
             top: 20px;
-            z-index: 2; 
+            z-index: 2;
             font-weight: bold;
             font-size: 1.3rem;
             text-transform: uppercase;
@@ -327,7 +327,7 @@ body[data-hijacking="on"] {
         top: 0;
         left: 0;
         width: 100%;
-        
+
         /* Force Hardware Acceleration */
         @include transform(translateZ(0));
         @include backface-visibility(hidden);

@@ -415,6 +415,11 @@ jQuery(document).ready(function($) {
 		return [translateY, scale, rotateX, opacity, boxShadowBlur];
 	}
 
+	function deviceType() {
+		//detect if desktop/mobile
+		return window.getComputedStyle(document.querySelector('body'), '::before').getPropertyValue('content').replace(/"/g, "");
+	}
+
 });
 
 /* Custom effects registration - feature available in the Velocity UI pack */
