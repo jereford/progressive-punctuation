@@ -1,0 +1,16 @@
+{
+  "name": "progressive-punctuation",
+  "version": "0.1.0",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "components/jquery#~2.1.4",
+    "velocity": "~1.2.2"
+  }
+}

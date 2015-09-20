@@ -1,10 +1,9 @@
 "use strict";
 
-var $ = require('jquery');
-
 var App = {
   init: function init() {
-    $('body').append('App initialized.');
+    console.log('App initialized.');
+
   }
 };
 

@@ -1,4 +1,4 @@
-jQuery(document).ready(function($){
+jQuery(document).ready(function($) {
 	//variables
 	var hijacking= $('body').data('hijacking'),
 		animationType = $('body').data('animation'),
@@ -28,8 +28,7 @@ jQuery(document).ready(function($){
 	});
 
     function bindEvents(MQ, bool) {
-
-    	if( MQ == 'desktop' && bool) {
+    	if( MQ == 'desktop' && bool ) {
     		//bind the animation to the window scroll event, arrows click and keyboard
 			if( hijacking == 'on' ) {
 				initHijacking();
@@ -202,11 +201,6 @@ jQuery(document).ready(function($){
 		sectionsAvailable.children('div').each(function(){
 			$(this).attr('style', '');
 		});
-	}
-
-	function deviceType() {
-		//detect if desktop/mobile
-		return window.getComputedStyle(document.querySelector('body'), '::before').getPropertyValue('content').replace(/"/g, "").replace(/'/g, "");
 	}
 
 	function selectAnimation(animationName, middleScroll, direction) {
@@ -420,10 +414,10 @@ jQuery(document).ready(function($){
 
 		return [translateY, scale, rotateX, opacity, boxShadowBlur];
 	}
+
 });
 
 /* Custom effects registration - feature available in the Velocity UI pack */
-//none
 $.Velocity
     .RegisterEffect("translateUp", {
     	defaultDuration: 1,
