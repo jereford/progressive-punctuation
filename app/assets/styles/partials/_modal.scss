@@ -1,36 +1,69 @@
 /* Modals*/
 
 /* Full page modal */
-.modal__wrapper {
-    @extend .vertical-align;
-    pointer-events: none;
-    opacity: 0;
-    right: 0;
-    left: 0;
-    height: 100%;
-    position: fixed;
-    background-color: $pink;
-    @include transition(all 0.25s ease-in-out);
-    &:target {
-        opacity: 1;
-        pointer-events: auto;
-    }
-    .modal__container {
-        @include outer-container;
-        @extend .vertical-align;
-        h1 { margin-top: 0;}
-    }
-}
+// .modal__wrapper {
+//     @extend .vertical-align;
+//     pointer-events: none;
+//     opacity: 0;
+//     right: 0;
+//     left: 0;
+//     height: 100%;
+//     position: fixed;
+//     background-color: $pink;
+//     @include transition(all 0.25s ease-in-out);
+//     &:target {
+//         opacity: 1;
+//         pointer-events: auto;
+//     }
+//     .modal__container {
+//         @include outer-container;
+//         @extend .vertical-align;
+//         h1 { margin-top: 0;}
+//     }
+// }
+//
+// .modal-box--open { text-decoration: none; }
+// .modal-box--close {
+//     @extend .bg--wheat;
+//     @extend .t--center;
+//     position: absolute;
+//     top: 50px;
+//     right: 100px;
+//     border-radius: 50%;
+//     text-decoration: none;
+//     width: 50px;
+//     height: 50px;
+// }
 
-.modal-box--open { text-decoration: none; }
-.modal-box--close {
-    @extend .bg--wheat;
-    @extend .t--center;
-    position: absolute;
-    top: 50px;
-    right: 100px;
-    border-radius: 50%;
-    text-decoration: none;
-    width: 50px;
-    height: 50px;
+.cd-modal-action {
+  position: relative;
+}
+.cd-modal-action .btn {
+  width: 12.5em;
+  height: 4em;
+  background-color: #123758;
+  border-radius: 5em;
+  transition: color 0.2s 0.3s, width 0.3s 0s;
+}
+.cd-modal-action .btn.to-circle {
+  width: 4em;
+  color: transparent;
+  transition: color 0.2s 0s, width 0.3s 0.2s;
+}
+.cd-modal-action .cd-modal-bg {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-2em);
+  width: 4em;
+  height: 4em;
+  background-color: #123758;
+  border-radius: 50%;
+  opacity: 0;
+  visibility: hidden;
+  transition: visibility 0s 0.5s;
+}
+.cd-modal-action .cd-modal-bg.is-visible {
+  opacity: 1;
+  visibility: visible;
 }

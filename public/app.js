@@ -113,6 +113,7 @@ require.register("application", function(exports, require, module) {
 "use strict";
 
 var App = {
+
   init: function init() {
     console.log('App initialized.');
   }
