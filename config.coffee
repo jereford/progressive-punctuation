@@ -8,3 +8,5 @@ module.exports = config:
         'vendor.js': /^vendor/
     stylesheets:
       joinTo: 'app.css'
+    templates:
+      joinTo: 'javascripts/app.js'

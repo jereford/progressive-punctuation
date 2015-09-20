@@ -7,5 +7,8 @@
     "javascript-brunch": "^1.7.1",
     "sass-brunch": "^1.8.11",
     "static-handlebars-brunch": "~ 0.1.0"
+  },
+  "dependencies": {
+    "handlebars-brunch": "^1.9.1"
   }
 }
