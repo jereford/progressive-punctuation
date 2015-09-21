@@ -401,7 +401,6 @@ body[data-hijacking="on"] {
         white-space: nowrap;
 
         background: url(../imgs/cd-icon-arrow.svg) no-repeat center center;
-        fill: $pink;
 
         &.cd-prev {
             @include transform(rotate(180deg));
