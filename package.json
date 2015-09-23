@@ -4,7 +4,9 @@
   "private": true,
   "devDependencies": {
     "coffee-script-brunch": "^1.8.2",
-    "sass-brunch": "^1.8.11",
     "static-handlebars-brunch": "~ 0.1.0"
+  },
+  "dependencies": {
+    "sass-brunch": "^1.9.0"
   }
 }

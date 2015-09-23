@@ -19,7 +19,7 @@ body {
         family: $primary-font; // variables inside partials > _variables.scss
     }
     color: $color-6;
-    background-color: shade($color-1, 20%);
+    background-color: $gray;
     @include font-smoothing;
 
     &::before {
@@ -38,8 +38,11 @@ body {
 }
 
 a {
-    color: $color-3;
+    color: $pink;
     text-decoration: none;
+    @include transition(0.2s all ease-in);
+    &:hover {color: $gray;}
+
 }
 
 /* -------------------------------- 
@@ -78,18 +81,19 @@ body[data-hijacking="on"] {
             max-width: 700px;
         }
         .how-to-use {
-            font-size: 10px;
+            font-size: 13px;
             text-transform: uppercase;
-            font-weight: 600;
-            padding: 10px 20px;
-            border-radius: 100px;
+            letter-spacing: .25px;
+            font-weight: 700;
+            padding: 20px 30px;
+            border-radius: 3px;
         }
         .punctuation-title {
             margin-top: 30px;
         }
 
         .punctuation-body {
-            margin: 0 0 20px;
+            margin: 0 0 15px;
             @include MQ(M) { margin-bottom: 30px; }
             @include MQ(L) { margin-bottom: 40px; }
         }
@@ -100,6 +104,7 @@ body[data-hijacking="on"] {
                 max-width: 600px;
                 width: 50%;
             }
+            color: $gray;
         }
         //Icon container 
         &.icon__container {
@@ -137,9 +142,10 @@ body[data-hijacking="on"] {
             @include MQ(L) { 
                 max-width: 700px; 
             }
+            color: $wheat;
         }
         &.one-icon {
-            fill: white;
+            fill: $gray;
         }
 
         //Second slide
@@ -148,15 +154,17 @@ body[data-hijacking="on"] {
             .tag {
                 font-weight: 600;
                 text-transform: uppercase;
+                letter-spacing: .75px;
                 font-size: 12px;
+                margin: 5px 0px;
             }
             .how-to-use {
-                background-color: #fff;
-                color: #1c1c1c;
+                background-color: $pink;
+                color: #fff;
                 @include transition(0.2s all ease-in);
                 &:hover {
-                    background-color: #1c1c1c;
-                    color: #fff;
+                    background-color: #fff;
+                    color: #c42476;
                 }
             }
             .punctuation-icon--mobile {
@@ -181,6 +189,32 @@ body[data-hijacking="on"] {
                 color: #1c1c1c;
                 @include transition(0.2s all ease-in);
                 &:hover {
+                    background-color: #c42476;
+                    color: #fff;
+                }
+            }
+            .punctuation-icon--mobile {
+                fill: white;
+                width: 10px;
+                height: 26px;
+                margin-right: 10px;
+                margin-bottom: -2px;
+            }
+        }
+
+        //Fourth Slide
+        &.four {
+            float: left;
+            .tag {
+                font-weight: 600;
+                text-transform: uppercase;
+                font-size: 12px;
+            }
+            .how-to-use {
+                background-color: #fff;
+                color: #1c1c1c;
+                @include transition(0.2s all ease-in);
+                &:hover {
                     background-color: #1c1c1c;
                     color: #fff;
                 }
@@ -193,12 +227,14 @@ body[data-hijacking="on"] {
                 margin-bottom: -2px;
             }
         }
+
     }
 
     h2 { margin: 0; }
 
     &:first-of-type > div {
-        background-color: #2d3337;
+        background-image: url(../imgs/bg-bazin.jpg);
+        height: 100vm;
 
         &::before {
             /* alert -> all scrolling effects are not visible on small devices */
@@ -215,19 +251,23 @@ body[data-hijacking="on"] {
     }
 
     &:nth-of-type(2) > div {
-        background-color: $color-2;
+        background-color: $wheat;
     }
 
     &:nth-of-type(3) > div {
-        background-color: #c42476;
+        background-color: $white;
     }
 
     &:nth-of-type(4) > div {
-        background-color: $color-4;
+        background-color: $lightgray;
     }
 
     &:nth-of-type(5) > div {
-        background-color: $color-5;
+        background-color: $white;
+    }
+
+    &:nth-of-type(6) > div {
+        background-color: $wheat;
     }
 
     [data-animation="parallax"] & > div,
@@ -241,7 +281,7 @@ body[data-hijacking="on"] {
     [data-animation="parallax"] &:first-of-type > div,
     [data-animation="fixed"] &:first-of-type > div,
     [data-animation="opacity"] &:first-of-type > div {
-        background-image: url('../img/img-1.jpg');
+        // background-image: url('../img/img-1.jpg');
     }
 
     [data-animation="parallax"] &:nth-of-type(2) > div,
@@ -345,26 +385,26 @@ body[data-hijacking="on"] {
 .cd-vertical-nav {
     /* lateral navigation */
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     right: 3%;
     @include center(y);
     display: none;
 
     a {
         display: block;
-        height: 40px;
-        width: 40px;
+        height: 30px;
+        width: 30px;
 
         /* image replace */
         overflow: hidden;
         text-indent: 100%;
         white-space: nowrap;
 
-        background: url(../img/cd-icon-arrow.svg) no-repeat center center;
+        background: url(../imgs/cd-icon-arrow.svg) no-repeat center center;
 
         &.cd-prev {
             @include transform(rotate(180deg));
-            margin-bottom: 10px;
+            margin-bottom: 30px;
         }
 
         &.inactive {
