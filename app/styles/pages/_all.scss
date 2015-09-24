@@ -29,9 +29,10 @@
 	display: inline-block;
 	float: left;
 	margin-right: 10px;
+	opacity: 0.5;
     @include transition(all .2s ease-in);
     &:hover {
-    	opacity: 0.75;
+    	opacity: 0.25;
     }
 
 }
