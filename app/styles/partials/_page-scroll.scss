@@ -59,18 +59,18 @@ body[data-hijacking="on"] {
 }
 
 .cd-section {
-    height: 100vh;
+    // height: 100vh;
 
     .cd-section__wrapper {
-        line-height: 100vh;
+        // line-height: 100vh;
         font-size: 2.4rem;
         margin: 0 auto;
         max-width: 1200px;
-        height: 100vh;
+        // height: 100vh;
     }
 
     .cd-section__container {
-        @extend .vertical-align;
+        // @extend .vertical-align;
         line-height: 1.5;
         padding: 0 30px;
         @include MQ(M) { 
