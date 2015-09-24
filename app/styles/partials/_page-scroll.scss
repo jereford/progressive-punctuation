@@ -66,6 +66,7 @@ body[data-hijacking="on"] {
         font-size: 2.4rem;
         margin: 0 auto;
         max-width: 1200px;
+        text-align: center;
         // height: 100vh;
     }
 
@@ -143,6 +144,7 @@ body[data-hijacking="on"] {
                 max-width: 850px; 
             }
             color: $wheat;
+            margin: 0 auto;
         }
         &.one-icon {
             fill: $gray;

@@ -1,29 +1,38 @@
-{{> header}}
+<!doctype html>
+<html lang="en" class="no-js">
 
-    <body data-hijacking="on" data-animation="fixed">
+    {{> header}}
 
-    <section class="cd-section visible">
-        <div>
-            <div class="cd-section__wrapper vertical-align">
-                <header>
-                    <img src="imgs/pp-logo.svg" class="splash-logo">
-                    <div class="social">
-                        <a href="http://twitter.com/punctuationtalk" target=_blank"><img class="social-icon" src="imgs/twitter.svg"></a>
-                        <a href="http://instagram.com/progressivepunctuation" target=_blank"><img class="social-icon" src="imgs/instagram.svg"></a>
-                        <a href="mailto:progressivepunctuation@gmail.com"><img class="social-icon" src="imgs/email.svg"></a>
-                    </div>
-                </header>
-                <div class="cd-section__container one">
-                    <h1>A look back at the future of our communication.</h1>
-                    <form accept-charset="UTF-8" action="https://formkeep.com/f/02a9f26cdc8e" method="POST">
-                    <label class="form-label">We'll send you an email when we launch (no spam, ever).</label>
-                    <input id="modal-company-name" type="text" placeholder="bill@itsbill.com" name="email">
-                     <input type="hidden" name="utf8" value="✓">
-                     <button type="submit" class="form-button">Submit</button>
-                    </form>
+    <body>
+
+        <section class="container">
+
+            <div class="header">
+                <img src="imgs/pp-logo.svg" class="splash-logo">
+                <div class="social">
+                    <a href="http://twitter.com/punctuationtalk" target="_blank"><img class="social-icon" src="imgs/twitter.svg"></a>
+                    <a href="http://instagram.com/progressivepunctuation" target="_blank"><img class="social-icon" src="imgs/instagram.svg"></a>
+                    <a href="mailto:progressivepunctuation@gmail.com"><img class="social-icon" src="imgs/email.svg"></a>
                 </div>
             </div>
-        </div>
-    </section>
 
-{{> footer}}
+            <div class="wrapper vertical-align">
+                    
+                <div class="cd-section__container one">
+                    <h1>A look back at the future of our communication.</h1>
+
+                    <form accept-charset="UTF-8" action="https://formkeep.com/f/02a9f26cdc8e" method="POST">
+                        <label class="form-label">Receive an email notification when we launch (no spam, ever).</label>
+                        <input id="modal-company-name" class="form-field" type="text" placeholder="bill@itsbill.com" name="email">
+                        <input type="hidden" name="utf8" value="✓">
+                        <button type="submit" class="form-button">Submit</button>
+                    </form>
+
+                </div>
+            </div>
+        
+        </section>
+    
+    </body>
+</html>
+

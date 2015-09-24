@@ -1,5 +1,14 @@
 /* Styling across all pages */
 
+body, html {
+	overflow: hidden;
+}
+
+body {
+	height: 100%;
+	position: relative;
+}
+
 /* Nav modal */
 .nav__links, .nav__content { @include span-columns(6); }
 
@@ -15,21 +24,27 @@
 }
 
 .splash-logo { 
-	width: 225px;
+	float: left;
+	display: inline-block;
 	fill: #656f76;
+	height: 50px;
+	width: auto;
 }
 
-header {
+.header {
 	height: auto;
+	margin: 50px 0;
 }
 
-.social{
+.social {
 	float: right;
+	display: inline-block;
+	width: auto;
 }
 
 .social-icon {
 	width: 50px;
-	display: inline-block;
+	display: block;
 	float: left;
 	margin-right: 10px;
 	opacity: 0.5;
@@ -38,4 +53,29 @@ header {
     	opacity: 0.25;
     }
 
+}
+
+.cd-section {
+	height: 100%;
+}
+
+.container {
+	height: 100vh;
+	max-width: 1200px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.wrapper {
+
+}
+
+.bouncebar-push {
+	position: fixed;
+}
+
+.vertical-align {
+    position: relative;
+    top: 35%;
+    @include transform(translateY(-50%));
 }
