@@ -5,12 +5,13 @@ h1, h2, h3, h4 {
     // TODO: Check why extends aren't working
     @extend .t--regular;
     font-weight: 400;
-    line-height: 1.2;
+    line-height: 1.15;
 }
 
 h1 {
     font-size: 30px;
     margin-top: 0;
+    margin-bottom: 25px;
     @include MQ(M) { font-size: 40px; }
     @include MQ(L) { font-size: 60px; }
 }

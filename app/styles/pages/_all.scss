@@ -9,15 +9,18 @@
     h1 { margin-bottom: 0; }
 }
 
-
 /* Content area */
 .bg--stardust {
     background: url('/imgs/stardust.png') $gray repeat center center;
 }
 
-
 .splash-logo { 
-	margin-bottom: 30px; 
+	margin-bottom: 150px; 
 	fill: $wheat;
-	width: 50%;
+	width: 32%;
+}
+
+img.social {
+	width: 40px;
+	fill: $pink;
 }
