@@ -42,6 +42,7 @@
         @extend .t--left;
         @extend .t--gray;
         margin-top: -30px;
+        padding: 0 30px;
         h1 { 
             margin-top: 0;
             @include transition(all .2s ease-in);
@@ -52,9 +53,19 @@
         background-color: $wheat;
         .sentence-icon {
             @extend .d--inline-block;
-            margin-left: 7px;
-            width: 10px;
-            height: 51px; 
+            width: 5px;
+            height: 27px;
+            margin-left: 3px;
+            @include MQ(M) {
+                width: 6px;
+                height: 33px;
+                margin-left: 3px;
+            }
+            @include MQ(L) {
+                margin-left:7px;
+                width: 10px;
+                height: 51px; 
+            }
             svg { 
                 width: 100%; 
                 height: 100%;
