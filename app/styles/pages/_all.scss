@@ -11,16 +11,27 @@
 
 /* Content area */
 .bg--stardust {
-    background: url('/imgs/stardust.png') $gray repeat center center;
+    background: url("imgs/stardust.png") $gray repeat center center;
 }
 
 .splash-logo { 
 	margin-bottom: 150px; 
-	fill: $wheat;
 	width: 32%;
+	fill: #656f76;
 }
 
-img.social {
-	width: 40px;
-	fill: $pink;
+.social{
+	margin-top:150px;
+}
+
+.social-icon {
+	width: 50px;
+	display: inline-block;
+	float: left;
+	margin-right: 10px;
+    @include transition(all .2s ease-in);
+    &:hover {
+    	opacity: 0.75;
+    }
+
 }
