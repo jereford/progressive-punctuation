@@ -7,12 +7,14 @@ input {
     border-radius: 3px;
     font-family: $body-font;
     color: $lightgray;
-    width: 400px;
+    width: 100%;
+    @include MQ(S) { width: 400px; }
 }
 
 .form-button {
 	border: 0;
     padding: 16px 40px;
+    margin: 20px;
     font-size: 14px;
     border-radius: 3px;
     font-family: $body-font;
@@ -24,6 +26,10 @@ input {
     @include transition(all .2s ease-in);
     &:hover {
     	background-color: lighten($pink, 10%);
+    }
+
+    @include MQ(M) {
+        margin: 0;
     }
 }
 
@@ -37,3 +43,4 @@ input {
 .form-field {
     background-color: $wheat;
 }
+

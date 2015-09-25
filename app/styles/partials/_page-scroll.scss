@@ -74,13 +74,13 @@ body[data-hijacking="on"] {
         // @extend .vertical-align;
         line-height: 1.5;
         padding: 0 30px;
-        @include MQ(M) { 
-            padding: 0 60px; 
-            max-width: 400px
-        }
-        @include MQ(L) {
-            max-width: 700px;
-        }
+        // @include MQ(M) { 
+        //     padding: 0 60px; 
+        //     max-width: 400px
+        // }
+        // @include MQ(L) {
+        //     max-width: 700px;
+        // }
         .how-to-use {
             font-size: 13px;
             text-transform: uppercase;
