@@ -1,0 +1,431 @@
+/* --==-- --==-- GLOBAL --==-- --==-- */
+* {
+	-webkit-tap-highlight-color: transparent;
+}
+
+/* --==-- --==-- HEADER --==-- --==-- */
+header {
+	box-sizing: border-box;
+}
+
+.header {
+	height: auto;
+}
+
+.header-container {
+	width: 100%;
+	margin: 0;
+	padding: 20px 8% 13px 8%;
+	position: relative;
+	line-height: 0;
+}
+
+.pp-logo {
+	width: 40px;
+}
+
+.pp-logo img {
+	display: none;
+}
+
+.pp-logo .mobile-logo {
+	display: block;
+}
+
+.nav-menu {
+	padding: 0;
+	top: 50%;
+	right: 8%;
+	position: absolute;
+	transform: translateY(-50%);
+}
+
+.nav-menu li:nth-child(3) {
+  display: none;
+}
+
+.nav-menu li:nth-child(2) {
+	margin-right: 0;
+}
+
+/* --==-- --==-- TWITTER CONTAINER --==-- --==-- */
+.twitter-wrapper {
+	display: none;
+}
+
+/* --==-- --==-- HOMEPAGE --==-- --==-- */
+.home .main-container {
+	padding-top: 120px
+}
+
+.home .texture {
+	height: 200vh
+}
+
+/* --==-- --==-- HERO --==-- --==-- */
+.home-header {
+	font-size: 26px;
+	line-height: 1.4em;
+	margin: 25px auto;
+	width: 100%;
+}
+
+.home-intro {
+	width: 83%;
+	-webkit-font-smoothing: antialiased;
+}
+
+.show-me {
+	width: 85%;
+}
+
+/* --==-- --==-- THANKS PAGE --==-- --==-- */
+body.thanks .main-container {
+	padding-top: 120px;
+}
+
+.thanks-header {
+	font-size: 30px;
+	line-height: 42px;
+}
+
+
+/* --==-- --==-- Modals --==-- --==-- */
+#marksModal, #aboutModal, #subscribeModal {
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
+}
+
+#subscribeModal {
+	width: 90%;
+	transform: none;
+	top: 5%;
+}
+
+#subscribeModal .modal-content {
+	position: relative;
+	padding: 3em 1em;
+}
+
+#subscribeModal .mergeTable {
+	display: block;
+}
+
+#subscribeModal .mergeTable .mergeRow-email {
+	padding-bottom: 1em;
+}
+
+#subscribeModal .mergeTable .mergeRow {
+  width: 100%;
+}
+
+#subscribeModal h3 {
+	font-size: 27px;
+}
+
+#subscribeModal p {
+	font-size: 15px;
+}
+
+div[class^="close-"] {
+	top: 25px;
+	right: 25px;
+	z-index: 999;
+}
+
+.modal-content {
+	width: 100%;
+	top: 0;
+	left: 0;
+	transform: none;
+	box-sizing: border-box;
+}
+
+.modal-content .container {
+	padding-top: 75px;
+}
+
+.about-info p, .about-footer p {
+	width: 100%;
+	margin-bottom: 40px;
+	padding: 0;
+}
+
+.modal-box {
+	width: 50%;
+	padding: 35px 0;
+	margin: 0;
+	float: left;
+	display: block;
+}
+
+.modal-mark-name {
+	margin-top: 0;
+	font-size: 14px;
+}
+
+.modal-mark img {
+	height: 80%;
+}
+
+.about-left {
+	width: 100%;
+	margin-top: 75px;
+	margin-bottom: 50px;
+	position: relative;
+}
+.about-left h1 {
+	display: inline-block;
+	font-size: 22px;
+	margin-right: 24px;
+}
+.about-left h1:nth-child(4) {
+	margin-right: 0;
+}
+
+.about-right {
+	width: 100%;
+}
+
+.about-process img {
+	margin-bottom: 40px;
+	padding: 0;
+}
+
+.about-contact {
+	margin-top: 0;
+}
+.about-contact p {
+	width: 100%;
+	font-size: 26px;
+	padding: 0;
+}
+
+.modal-content.credits .about-credit {
+	margin-top: 0;
+}
+.about-credit h1 {
+	font-size: 26px;
+}
+.about-credit h3 {
+	font-size: 16px;
+}
+.about-credit p {
+	margin-bottom: 15px;
+}
+.about-credit p:last-child {
+	margin-bottom: 0;
+}
+.about-mobile-bar {
+	display: block;
+	position: absolute;
+		right: 0;
+		bottom: 0;
+		left: 0;
+	height: 3px;
+	background-color: #9D155E;
+}
+.about-mobile-bar-underline {
+	display: block;
+	position: absolute;
+		right: 0;
+		bottom: 0;
+		left: 0;
+	height: 3px;
+	background-color: #FFF;
+	z-index: 2;
+	transition: all .25s ease-in-out;
+}
+	.modal-content.info .about-mobile-bar-underline {
+		width: 40px;
+	}
+	.modal-content.process .about-mobile-bar-underline {
+		left: 69px;
+		width: 81px;
+	}
+	.modal-content.contact .about-mobile-bar-underline {
+		left: 180px;
+		width: 80px;
+	}
+	.modal-content.credits .about-mobile-bar-underline {
+		left: calc(100% - 75px);
+		width: 75px;
+	}
+
+.social-row p {
+	width: 100%;
+	font-size: 30px;
+	line-height: 42px;
+	margin-top: 40px;
+}
+
+.about-footer p:first-child, .about-info p:first-child {
+	width: 100%;
+	font-size: 30px;
+	line-height: 42px;
+	margin-bottom: 40px;
+}
+
+.social-row {
+	padding-left: 0;
+}
+
+/* --==-- --==-- Mark Page --==-- --==-- */
+.mark-container {
+	transform: none !important;
+}
+
+.slick-arrow {
+	top: 25vh;
+	width: 50px;
+	padding: 0;
+}
+
+.slick-prev {
+	left: 0;
+}
+
+.slick-next {
+	right: 0;
+}
+
+.slide-indicator {
+	display: none !important;
+}
+
+.mark-hero {
+	height: 110vh;
+}
+
+.mark-background {
+	width: 100%;
+	height: 40%;
+	margin-bottom: 30px;
+}
+
+.mark-name {
+	font-size: 36px;
+	position: absolute;
+	top: 25vh;
+	width: 100%;
+	text-align: center;
+}
+
+.mark-details {
+	width: 100%;
+	height: auto;
+	padding :0;
+}
+
+.mark-details .details-wrapper {
+	position: initial;
+	transform: none;
+}
+
+.mark-background img {
+	max-height: 70%;
+	top: 60%;
+}
+
+/*div[class^="mark-"].mark-background {
+	background-position: 50% 50%;
+}*/
+.mark-acclamation {
+	background-size: 50%;
+}
+.mark-exclamation-comma {
+	background-size: 10%;
+}
+.mark-interrobang {
+	background-size: 40%;
+}
+.mark-elrey {
+  background-size: 10%;
+}
+.mark-irony {
+	background-size: 30%;
+}
+.mark-love-point {
+	background-size: 50%;
+}
+.mark-friendly-period {
+	background-size: 40%;
+}
+.mark-authority {
+	background-size: 30%;
+}
+.mark-certitude {
+	background-size: 26%;
+}
+.mark-sarcmark {
+	background-size: 40%;
+}
+.mark-rhetorical-question {
+	background-size: 40%;
+}
+.mark-doubt {
+	background-size: 30%;
+}
+.mark-question-comma {
+	background-size: 30%;
+}
+.mark-snark-mark {
+	background-size: 26%;
+}
+.description-wrapper {
+	padding: 30px;
+	width: 80%;
+}
+.description-wrapper > div {
+	width: 100%;
+	margin-bottom: 25px;
+	text-align: left;
+}
+.description-container p {
+	-webkit-font-smoothing: antialiased;
+}
+.title {
+	font-size: 14px;
+	font-weight: 800;
+	-webkit-font-smoothing: antialiased;
+	letter-spacing: 1.5px;
+	line-height: auto;
+}
+.description {
+	margin: 0;
+	width: 100%;
+}
+.description p {
+	font-size: 24px;
+	-webkit-font-smoothing: antialiased;
+	line-height: 35px;
+}
+
+
+/* --==-- --==-- Quote Section --==-- --==-- */
+.dots {
+	padding: 130px 0 50px 0;
+}
+
+.quote {
+	width: 80%;
+	font-size: 36px;
+  -webkit-font-smoothing: antialiased;
+	margin-bottom: 30px;
+}
+.quote-author {
+	width: 80%;
+	margin: 0 auto;
+	font-size: 22px;
+	line-height: 1.3em;
+	-webkit-font-smoothing: antialiased;
+}
+.social-icons {
+	margin: 60px 0 0 0;
+}
+.social-icons button, .social-icons a {
+	width: 90%;
+	margin: 0 auto 15px auto;
+	font-size: 14px;
+	height: 44px;
+}

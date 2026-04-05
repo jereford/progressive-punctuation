@@ -1,0 +1,6 @@
+@import 'main.css';
+@import 'tablet.css' (max-width: 768px);
+@import 'mobile.css' (max-width: 550px);
+@import 'mobile-small.css' (max-width: 370px);
+@import 'animate.css';
+@import 'slick.css';

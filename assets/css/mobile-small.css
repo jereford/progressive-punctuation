@@ -1,0 +1,31 @@
+.about-left h1 {
+	margin-right: 10px;
+}
+
+.modal-content.info .about-mobile-bar-underline {
+	width: 40px;
+}
+.modal-content.process .about-mobile-bar-underline {
+	left: 55px;
+	width: 81px;
+}
+.modal-content.contact .about-mobile-bar-underline {
+	left: 153px;
+	width: 80px;
+}
+.modal-content.credits .about-mobile-bar-underline {
+	left: calc(100% - 78px);
+	width: 78px;
+}
+
+.about-footer p a {
+	font-size: 0.8em;
+}
+
+#subscribeModal h3 {
+	font-size: 24px;
+}
+
+#subscribeModal p {
+	font-size: 14px;
+}

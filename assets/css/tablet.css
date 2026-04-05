@@ -1,0 +1,56 @@
+.modal-box {
+  margin: 0;
+  width: 24%;
+}
+
+#marksModal, #aboutModal, #subscribeModal {
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.home-header {
+  margin: 60px auto;
+}
+
+
+#subscribeModal {
+	width: 90%;
+	height: auto;
+  transform: none;
+  top: 25%;
+}
+
+#subscribeModal .modal-content {
+	position: relative;
+	padding: 3em 2em;
+  width: 90%;
+  top: 0;
+  left: 0;
+  transform: none;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+#subscribeModal .mergeTable {
+	display: block;
+}
+
+#subscribeModal .mergeTable .mergeRow-email {
+	padding-bottom: 1em;
+}
+
+#subscribeModal .mergeTable .mergeRow {
+  width: 100%;
+}
+
+#subscribeModal h3 {
+	font-size: 24px;
+}
+
+#subscribeModal p {
+	font-size: 15px;
+}
+
+#subscribeModal .mergeTable .mergeRow input {
+	cursor: pointer;
+}
